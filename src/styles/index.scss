@@ -1,0 +1,18 @@
+@use 'reset';
+@use 'vars';
+
+
+@font-face {
+  font-family: 'Mustica';
+  src: url('../assets/fonts/MusticaPro-SemiBold.otf');
+}
+
+body {
+  //background-color: vars.$body-back-color;
+  font-family: 'Mustica', sans-serif;
+  min-height: 100vh;
+  background-image:
+  repeating-linear-gradient(darken(vars.$body-back-color, 0.5) 0 2px, transparent 1px 100%),
+  repeating-linear-gradient(90deg, darken(vars.$body-back-color, 0.5) 0 2px, transparent 1px 100%);
+  background-size: 64px 64px;
+}
